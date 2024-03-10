@@ -1,0 +1,27 @@
+name: auth_client
+description: A new Flutter package project.
+version: 0.0.1
+publish_to: 'none'
+homepage:
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  core:
+    path: ../core
+  firebase_auth: ^4.15.0
+  flutter:
+    sdk: flutter
+  flutter_facebook_auth: ^6.1.1
+  google_sign_in: ^6.2.1
+  sign_in_with_apple: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+

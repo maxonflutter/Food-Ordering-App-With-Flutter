@@ -26,8 +26,7 @@ mixin _$User {
   @EmailConverter()
   Email? get email => throw _privateConstructorUsedError;
   Address? get address => throw _privateConstructorUsedError;
-  String? get profilePictureUrl =>
-      throw _privateConstructorUsedError; // TODO: Check whether to keep payment methods or payment method ids
+  String? get profilePictureUrl => throw _privateConstructorUsedError;
   List<String> get paymentMethods => throw _privateConstructorUsedError;
   String? get defaultPaymentMethod => throw _privateConstructorUsedError;
   DateTime get createdAt => throw _privateConstructorUsedError;
@@ -232,9 +231,7 @@ class _$UserImpl implements _User {
   final Address? address;
   @override
   final String? profilePictureUrl;
-// TODO: Check whether to keep payment methods or payment method ids
   final List<String> _paymentMethods;
-// TODO: Check whether to keep payment methods or payment method ids
   @override
   @JsonKey()
   List<String> get paymentMethods {
@@ -325,7 +322,7 @@ abstract class _User implements User {
   Address? get address;
   @override
   String? get profilePictureUrl;
-  @override // TODO: Check whether to keep payment methods or payment method ids
+  @override
   List<String> get paymentMethods;
   @override
   String? get defaultPaymentMethod;

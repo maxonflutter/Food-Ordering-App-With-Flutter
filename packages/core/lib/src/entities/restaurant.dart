@@ -25,11 +25,4 @@ class Restaurant with _$Restaurant {
 
   factory Restaurant.fromJson(Map<String, Object?> json) =>
       _$RestaurantFromJson(json);
-
-  factory Restaurant.fromJsonWithId(Map<String, dynamic> json, {String? id}) {
-    if (id == null) {
-      return Restaurant.fromJson(json);
-    }
-    return Restaurant.fromJson(json).copyWith(id: id);
-  }
 }

@@ -13,11 +13,4 @@ class FoodCategory with _$FoodCategory {
 
   factory FoodCategory.fromJson(Map<String, Object?> json) =>
       _$FoodCategoryFromJson(json);
-
-  factory FoodCategory.fromJsonWithId(Map<String, dynamic> json, {String? id}) {
-    if (id == null) {
-      return FoodCategory.fromJson(json);
-    }
-    return FoodCategory.fromJson(json).copyWith(id: id);
-  }
 }

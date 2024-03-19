@@ -1,16 +1,21 @@
-# food_ordering_app_with_flutter_and_bloc
+# Hungry
+<table>
+  <tr>
+    <td><img src="assets/icons/app_icon.png" alt="Hungry" style="width: 300px;"/></td>
+    <td>
+      <strong>Hungry</strong> is a food delivery app template built by <a href="https://atomsbox.com">atomsbox.com</a>. It gives you a consumer-facing solution that replicates the core design and features of the popular food delivery platform, Uber Eats. If you're keen on creating a food delivery app, this template offers you the starting point for your project with Flutter, Firebase and Google Maps Platform. 
+    </td>
+  </tr>
+</table>
 
-A new Flutter project.
+![Hero](screenshots/hungry_preview_thumbnail.png)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+|![Home Screen](screenshots/hungry-1.png) | ![Home Screen (Pick-up)](screenshots/hungry-2.png) | ![Search Categories](screenshots/hungry-3.png) |
+|:---:|:---:|:---:|
+| Home Screen | Home Screen (Pick-up) | Search Categories |
+| ![Search Categories (List)](screenshots/hungry-4.png) | ![Restaurant Details Screen](screenshots/hungry-6.png) | ![Menu Item Details View](screenshots/hungry-7.png) |
+| Search Categories (List) Screen | Restaurant Details Screen | Menu Item Details View |
+| ![Cart Screen](screenshots/hungry-8.png)| ![Welcome Screen](screenshots/hungry-9.png) |  |
+| Cart Screen | Welcome Screen |  |

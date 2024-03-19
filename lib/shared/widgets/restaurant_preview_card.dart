@@ -1,6 +1,8 @@
 import 'package:core/entities.dart';
 import 'package:flutter/material.dart';
 
+import '../../screens/restaurant_details/restaurant_details_screen.dart';
+
 class RestaurantPreviewCard extends StatelessWidget {
   const RestaurantPreviewCard({
     super.key,
@@ -16,7 +18,18 @@ class RestaurantPreviewCard extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return RestaurantDetailsScreen(
+                restaurantId: restaurant.id,
+              );
+            },
+          ),
+        );
+      },
       child: Container(
         width: size.width,
         margin: const EdgeInsets.only(bottom: 8.0, right: 8.0),

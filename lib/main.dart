@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:food_ordering_app_with_flutter_and_bloc/shared/theme/app_theme.dart';
 
-import '../state/home/home_bloc.dart';
 import 'repositories/food_category_repository.dart';
 import 'repositories/restaurant_repository.dart';
 import 'screens/home/home_screen.dart';
+import 'state/home/home_bloc.dart';
 
-void main() async {
+void main() {
   const foodCategoryRepository = FoodCategoryRepository();
   const restaurantRepository = RestaurantRepository();
 
@@ -38,41 +37,23 @@ class AppScreen extends StatelessWidget {
       ],
       child: MultiBlocProvider(
         providers: [
+          // Global scope
           BlocProvider(
             create: (context) => HomeBloc(
-              restaurantRepository: restaurantRepository,
               foodCategoryRepository: foodCategoryRepository,
+              restaurantRepository: restaurantRepository,
             )..add(LoadHomeEvent()),
           ),
         ],
         child: MaterialApp(
-          title: 'Food Ordering App',
-          // theme: AppTheme().themeData,
+          title: 'Flutter Demo',
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            useMaterial3: true,
+          ),
           home: HomeScreen(),
         ),
       ),
     );
   }
 }
-
-
-
-// void main() {
-//   runApp(const MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'Flutter Demo',
-//       theme: ThemeData(
-//         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-//         useMaterial3: true,
-//       ),
-//       home: HomeScreen(),
-//     );
-//   }
-// }

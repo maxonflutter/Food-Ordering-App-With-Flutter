@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'repositories/food_category_repository.dart';
 import 'repositories/restaurant_repository.dart';
 import 'screens/home/home_screen.dart';
+import 'shared/theme/app_theme.dart';
 import 'state/home/home_bloc.dart';
 
 void main() {
@@ -47,10 +48,7 @@ class AppScreen extends StatelessWidget {
         ],
         child: MaterialApp(
           title: 'Flutter Demo',
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-            useMaterial3: true,
-          ),
+          theme: AppTheme().themeData,
           home: HomeScreen(),
         ),
       ),

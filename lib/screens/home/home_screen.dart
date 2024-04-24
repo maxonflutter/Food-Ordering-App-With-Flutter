@@ -1,9 +1,8 @@
-import 'package:core/entities.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:food_ordering_app_with_flutter_and_bloc/shared/widgets/main_nav_bar.dart';
 
 import '../../shared/widgets/custom_action_chip.dart';
+import '../../shared/widgets/main_nav_bar.dart';
 import '../../shared/widgets/rating_modal.dart';
 import '../../shared/widgets/restaurant_preview_card.dart';
 import '../../shared/widgets/section_title.dart';

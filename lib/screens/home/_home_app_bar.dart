@@ -39,8 +39,10 @@ class _HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
           value: true,
           onChanged: (value) {},
           thumbIcon: const MaterialStatePropertyAll(
-            true ? Icon(Icons.delivery_dining) : Icon(Icons.shopping_cart),
-          ),
+              // true ?
+              Icon(Icons.delivery_dining)
+              //  : Icon(Icons.shopping_cart),
+              ),
         ),
         const SizedBox(width: 8.0),
       ],
